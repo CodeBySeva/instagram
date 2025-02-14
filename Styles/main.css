@@ -1,0 +1,558 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 616px;
+    max-height: 1400px;
+    margin: 0 auto;
+}
+
+
+header {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    input {
+        display: flex;
+        width: 208px;
+        height: 32px;
+        border-radius: 2px;
+        outline: none;
+        border: 1px solid rgba(219, 219, 219, 1);
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .icone {
+        display: flex;
+        gap: 10px;
+
+        img {
+            cursor: pointer;
+        }
+    }
+
+    .avatar {
+        width: 24px;
+        background-color: rgba(230, 230, 230, 1);
+        cursor: pointer;
+        border-radius: 100%;
+    }
+}
+
+
+.post-elem {
+    width: 100%;
+    height: 772px;
+    margin-top: 10px;
+    border: 1px solid rgba(219, 219, 219, 1);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    display: flex;
+    color: rgba(38, 38, 38, 1);
+    padding: 16px 8px 10px 24px;
+
+    .profile-pic {
+        width: 40px;
+        height: 40px;
+        background-color: rgba(229, 229, 229, 1);
+        border-radius: 50%;
+        margin-right: 8px;
+        cursor: pointer;
+    }
+
+    .user-info {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3px;
+        gap: 2px;
+        cursor: pointer;
+        font-size: 13px;
+        line-height: 16px;
+
+        .nickname {
+            font-weight: 600;
+        }
+
+        .location {
+            font-weight: 400;
+        }
+    }
+
+    .menu {
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: 73%;
+        cursor: pointer;
+    }
+}
+
+.post-image {
+    width: 100%;
+    height: 408px;
+    background-color: rgba(229, 229, 229, 1);
+    cursor: pointer;
+}
+
+.post-actions {
+    padding: 16px;
+    display: flex;
+    gap: 16px;
+    position: relative;
+
+    .save-icon {
+        position: absolute;
+        right: 3%;
+    }
+
+    img {
+        cursor: pointer;
+    }
+}
+
+.post-likes,
+.post-caption,
+.view-comments,
+.comments,
+.publication {
+    margin-top: 8px;
+    margin-left: 16px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.post-caption,
+.comments {
+    color: rgba(44, 44, 44, 1);
+}
+
+.post-likes {
+    font-weight: 600;
+    color: rgba(38, 38, 38, 1);
+    line-height: 16px;
+}
+
+.users-nickname {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(38, 38, 38, 1);
+
+}
+
+.more,
+.view-comments,
+.publication {
+    color: rgba(152, 152, 152, 1);
+    cursor: pointer;
+}
+
+.comments {
+    position: relative;
+    cursor: pointer;
+
+    img {
+        position: absolute;
+        right: 2%;
+        cursor: pointer;
+    }
+}
+
+.publication {
+    font-size: 12px;
+}
+
+.add-comment {
+    display: flex;
+    margin-top: 13px;
+    border-top: 1px solid #ccc;
+    align-items: center;
+    padding: 15px 16px;
+
+    img {
+        margin-right: 16px;
+        cursor: pointer;
+    }
+
+    input {
+        outline: none;
+        border: none;
+        padding: 5px;
+        width: 500px;
+        margin-right: 16px;
+        cursor: pointer;
+    }
+
+    button {
+        background-color: white;
+        color: rgba(0, 149, 246, 1);
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.stories-container {
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    white-space: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.stories-container::-webkit-scrollbar {
+    height: 3px;
+}
+
+.stories-container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.story-pic {
+    width: 64px;
+    height: 64px;
+    background-color: rgba(230, 230, 230, 1);
+    border-radius: 50%;
+    border: 2px solid rgba(204, 204, 204, 1);
+    box-shadow: inset 0 0 0 3px white;
+    overflow: hidden;
+
+    .story-pic img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+}
+
+.status-false {
+    border: 3px solid #FF543E;
+}
+
+.story-name {
+    font-size: 12px;
+    text-align: center;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    width: 320px;
+    aspect-ratio: 9/16;
+    background: rgb(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 1001;
+
+    .close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 20px;
+        color: white;
+        cursor: pointer;
+        z-index: 3;
+    }
+}
+
+.story-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.story-info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding-left: 37px;
+    padding-top: 10px;
+
+    .users-avatars img {
+        width: 34px;
+        height: 34px;
+        background-color: rgba(230, 230, 230, 1);
+        border-radius: 50%;
+        border: 2px solid rgba(204, 204, 204, 1);
+        cursor: pointer;
+
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 3px;
+    }
+
+    p {
+        font-size: 15px;
+        color: white;
+        cursor: pointer;
+    }
+
+    span {
+        font-size: 12px;
+        color: #ccc;
+    }
+
+
+    .left-side {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 13px;
+        z-index: 3;
+
+        .close-story {
+            color: white;
+            font-size: 23px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 3px;
+        }
+
+        .main {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+}
+
+.story-actions {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    gap: 5px;
+    width: 100%;
+    margin: 10px;
+
+    img {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    input {
+        width: 100%;
+        height: 27px;
+        border-radius: 150px;
+        outline: none;
+        padding: 3px 10px;
+        cursor: pointer;
+        border: 1px solid black;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        font-size: 12px;
+    }
+
+    input::placeholder {
+        color: white;
+    }
+}
+
+
+.swiper-container {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-accaunt {
+    display: flex;
+    justify-content: center;
+    font-family: Roboto;
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .main-text {
+            display: flex;
+            gap: 80px;
+            border-bottom: 1px solid #DBDBDB;
+            padding: 40px;
+
+            #avatar {
+                width: 110px;
+                height: 110px;
+                border-radius: 100%;
+                cursor: pointer;
+            }
+
+            .text-data {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                .main-data {
+                    display: flex;
+                    gap: 24px;
+
+                    div {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                    }
+
+                    p {
+                        font-weight: 300;
+                        font-size: 28px;
+                        color: rgba(38, 38, 38, 1);
+                        height: 32px;
+                    }
+
+                    button {
+                        width: 96px;
+                        height: 32px;
+                        font-weight: 400;
+                        font-size: 14px;
+                        text-align: center;
+                        border: none;
+                        background-color: white;
+                        border: 1px solid #DBDBDB;
+                        cursor: pointer;
+                    }
+
+                    img {
+                        cursor: pointer;
+                    }
+                }
+
+                .quantity-data {
+                    display: flex;
+                    gap: 32px;
+
+                    p {
+                        font-size: 16px;
+                        display: flex;
+                        gap: 3px;
+                        color: rgba(38, 38, 38, 1);
+                        cursor: pointer;
+
+                        span {
+                            font-weight: 600;
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                .main-info {
+                    display: flex;
+                    gap: 10px;
+                }
+
+                span {
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: rgba(38, 38, 38, 1);
+                }
+            }
+
+        }
+
+        .navigation {
+            display: flex;
+            gap: 64px;
+            padding: 16px;
+
+            span {
+                font-weight: 400;
+                font-size: 12px;
+                cursor: pointer;
+                color: rgba(38, 38, 38, 1);
+            }
+
+            div {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+        }
+
+        .profile-posts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 10px;
+            justify-content: center;
+            align-items: flex-start;
+            
+            .postElem {
+                display: grid;
+                grid-template-columns: repeat(3, 180px);
+                gap: 16px;
+                width: 100%;
+                max-width: 920px;
+                cursor: pointer;
+            }
+
+            .image {
+                width: 100%;
+                height: 204px;
+                object-fit: cover;
+            }
+        }
+    }
+}

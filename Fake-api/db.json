@@ -1,0 +1,205 @@
+{
+    "stories": [
+        {
+            "id": "1",
+            "username": "Alex",
+            "avatarUrl": "https://picsum.photos/seed/alex/100",
+            "storyUrl": "https://picsum.photos/seed/story1/340/565",
+            "status": false,
+            "liked": true
+        },
+        {
+            "id": "2",
+            "username": "Lamia",
+            "avatarUrl": "https://picsum.photos/seed/lamia/100",
+            "storyUrl": "https://picsum.photos/seed/story2/340/565",
+            "status": false,
+            "liked": true
+        },
+        {
+            "id": "3",
+            "username": "Daler",
+            "avatarUrl": "https://picsum.photos/seed/daler/100",
+            "storyUrl": "https://picsum.photos/seed/story3/340/565",
+            "status": false,
+            "liked": false
+        },
+        {
+            "id": "4",
+            "username": "Lilly",
+            "avatarUrl": "https://picsum.photos/seed/lilly/100",
+            "storyUrl": "https://picsum.photos/seed/story4/340/565",
+            "status": false,
+            "liked": true
+        },
+        {
+            "id": "5",
+            "username": "Ali",
+            "avatarUrl": "https://picsum.photos/seed/ali/100",
+            "storyUrl": "https://picsum.photos/seed/story5/340/565",
+            "status": false,
+            "liked": true
+        },
+        {
+            "id": "6",
+            "username": "Bodya",
+            "avatarUrl": "https://picsum.photos/seed/bodya/100",
+            "storyUrl": "https://picsum.photos/seed/story6/340/565",
+            "status": false,
+            "liked": false
+        },
+        {
+            "id": "7",
+            "username": "Sara",
+            "avatarUrl": "https://picsum.photos/seed/sara/100",
+            "storyUrl": "https://picsum.photos/seed/story7/340/565",
+            "status": false,
+            "liked": false
+        },
+        {
+            "id": "8",
+            "username": "Shaxa",
+            "avatarUrl": "https://picsum.photos/seed/shaxa/100",
+            "storyUrl": "https://picsum.photos/seed/story8/340/565",
+            "status": false,
+            "liked": true
+        },
+        {
+            "id": "9",
+            "username": "Alina",
+            "avatarUrl": "https://picsum.photos/seed/alina/100",
+            "storyUrl": "https://picsum.photos/seed/story9/340/565",
+            "status": false,
+            "liked": true
+        },
+        {
+            "id": "10",
+            "username": "Senora",
+            "avatarUrl": "https://picsum.photos/seed/senora/100",
+            "storyUrl": "https://picsum.photos/seed/story23/340/565",
+            "status": false,
+            "liked": true
+        },
+        {
+            "id": "11",
+            "username": "Sabrina",
+            "avatarUrl": "https://picsum.photos/seed/sabrina/100",
+            "storyUrl": "https://picsum.photos/seed/story12/340/565",
+            "status": false,
+            "liked": true
+        },
+        {
+            "id": "12",
+            "username": "Beka",
+            "avatarUrl": "https://picsum.photos/seed/beka/100",
+            "storyUrl": "https://picsum.photos/seed/story18/340/565",
+            "status": false,
+            "liked": true
+        }
+    ],
+    "posts": [
+        {
+            "id": "asd232",
+            "date": "2025-02-05",
+            "description": "Your soul will be healed by the one who created it",
+            "imageUrl": [
+                "https://picsum.photos/seed/image23/408/614",
+                "https://picsum.photos/seed/image58/408/614",
+                "https://picsum.photos/seed/image39/408/614",
+                "https://picsum.photos/seed/image79/408/614",
+                "https://picsum.photos/seed/image92/408/614",
+                "https://picsum.photos/seed/image175/408/614",
+                "https://picsum.photos/seed/image201/408/614",
+                "https://picsum.photos/seed/image205/408/614",
+                "https://picsum.photos/seed/image253/408/614",
+                "https://picsum.photos/seed/image258/408/614"
+            ],
+            "location": "Samarkand, Uzbekistan",
+            "likes": 50,
+            "comments": 12,
+            "user": {
+                "id": "10",
+                "username": "Senora",
+                "avatarUrl": "https://picsum.photos/seed/senora/100"
+            }
+        },
+        {
+            "id": "asd233",
+            "date": "2025-02-06",
+            "description": "Another beautiful day!",
+            "imageUrl": [
+                "https://picsum.photos/seed/image18/408/614",
+                "https://picsum.photos/seed/image29/408/614",
+                "https://picsum.photos/seed/image32/408/614",
+                "https://picsum.photos/seed/image97/408/614",
+                "https://picsum.photos/seed/image1115/408/614",
+                "https://picsum.photos/seed/image118/408/614"
+            ],
+            "location": "Bukhara, Uzbekistan",
+            "likes": 78,
+            "comments": 21,
+            "user": {
+                "id": "2",
+                "username": "Lamia",
+                "avatarUrl": "https://picsum.photos/seed/lamia/100"
+            }
+        },
+        {
+            "id": "asd234",
+            "date": "2025-02-09",
+            "description": "do more things that make you forget to check your phone",
+            "imageUrl": [
+                "https://picsum.photos/seed/image37/408/614",
+                "https://picsum.photos/seed/image40/408/614",
+                "https://picsum.photos/seed/image88/408/614",
+                "https://picsum.photos/seed/image80/408/614",
+                "https://picsum.photos/seed/image91/408/614",
+                "https://picsum.photos/seed/image95/408/614",
+                "https://picsum.photos/seed/image103/408/614",
+                "https://picsum.photos/seed/image129/408/614",
+                "https://picsum.photos/seed/image147/408/614",
+                "https://picsum.photos/seed/image167/408/614"
+            ],
+            "location": "Tashkent, Uzbekistan",
+            "likes": 100,
+            "comments": 25,
+            "user": {
+                "id": "12",
+                "username": "Beka",
+                "avatarUrl": "https://picsum.photos/seed/beka/100"
+            }
+        }
+    ],
+    "users": [
+        {
+            "id": "10",
+            "username": "Senora",
+            "name": "Seva",
+            "lastname": "Me",
+            "avatarUrl": "https://picsum.photos/seed/senora/100",
+            "posts": 12,
+            "followings": 100,
+            "followers": 150
+        },
+        {
+            "id": "2",
+            "username": "Lamia",
+            "name": "Lamia",
+            "lastname": "Konli",
+            "avatarUrl": "https://picsum.photos/seed/lamia/100",
+            "posts": 6,
+            "followings": 250,
+            "followers": 50
+        },
+        {
+            "id": "12",
+            "username": "Beka",
+            "name": "Bexruz",
+            "lastname": "Salimov",
+            "avatarUrl": "https://picsum.photos/seed/beka/100",
+            "posts": 10,
+            "followings": 200,
+            "followers": 250
+        }
+    ]
+}

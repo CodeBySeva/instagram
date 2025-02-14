@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./Styles/main.css">
+    <title>Instagram</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header></header>
+
+        <div class="stories-container"></div>
+
+        <div class="modal" id="storyModal">
+            <div class="modal-content">
+                <div class="story-info">
+                    <div class="users-avatars">
+                        <img src="" alt="avatar" id="avatarPic">
+                    </div>
+                    <p id="username">nickname</p>
+                    <span>3h.</span>
+                    <div class="left-side">
+                        <span class="close-story" id="closeStory">&times;</span>
+                        <span class="main">...</span>
+                    </div>
+                </div>
+                <img class="story-content" src="" alt="">
+                <div class="story-actions">
+                    <img src="./images/coment-icon.png" alt="">
+                    <input type="text" placeholder="Send Message...">
+                    <img src="./images/like-icon.png" alt="">
+                    <img src="./images/send-icon.png" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <div class="posts-container"></div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script type="module" src="./script.js"></script>
+</body>
+
+</html>
